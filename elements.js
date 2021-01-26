@@ -1,4 +1,4 @@
-const elements = [
+export const elements = [
     {
         tag: '<html>',
         content: ['head', 'body'],
