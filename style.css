@@ -1,0 +1,44 @@
+:root {
+    --background: #333;
+    --card: #222;
+
+    --cardText: #ccc;
+
+    --root: rgb(192, 192, 192);
+    --meta: rgb(37, 185, 0);
+    --section: rgb(16, 108, 255);
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+main {
+    background-color: var(--background);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.element {
+    background-color: var(--card);
+    color: var(--cardText);
+    width: min(30ch, 100vw);
+    height: 50ch;
+    padding: 0.2rem;
+    margin: 0.4rem;
+    border-radius: 1rem;
+}
+.tag {
+    text-align: center;
+}
+.name {
+    text-align: center;
+}
+.description {
+    margin: 0 2rem;
+    font-size: 120%;
+}
+.root {
+    border-top: 2px solid var(--root);
+}
