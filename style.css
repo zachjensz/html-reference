@@ -2,15 +2,29 @@
     --background: #333;
     --card: #222;
 
-    --cardText: #ccc;
+    --cardText: #eee;
 
     --root: rgb(192, 192, 192);
     --meta: rgb(37, 185, 0);
     --section: rgb(16, 108, 255);
+    --textBlock: rgb(255, 0, 0);
+    --textInline: rgb(255, 123, 0);
+    --media: rgb(255, 230, 0);
+    --embedding: rgb(0, 247, 255);
+    --scripting: rgb(208, 255, 0);
+    --tables: rgb(140, 0, 255);
+    --forms: rgb(255, 0, 221);
+    --interactive: rgb(255, 0, 106);
+    --components: rgb(255, 255, 255);
+    --obsolete: rgb(63, 63, 63);
 }
 body {
     margin: 0;
     font-family: sans-serif;
+}
+h2 {
+    padding: 0rem;
+    margin: 0.4rem 0;
 }
 
 main {
@@ -23,22 +37,36 @@ main {
 .element {
     background-color: var(--card);
     color: var(--cardText);
-    width: min(30ch, 100vw);
-    height: 50ch;
+    width: min(24ch, 100vw);
+    height: 36ch;
     padding: 0.2rem;
     margin: 0.4rem;
     border-radius: 1rem;
+    border-top: 1rem solid #000;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.element:hover {
+    background-color: var(--cardText);
+    color: var(--card);
 }
 .tag {
     text-align: center;
 }
 .name {
     text-align: center;
+    opacity: 0.3;
 }
 .description {
     margin: 0 2rem;
     font-size: 120%;
 }
 .root {
-    border-top: 2px solid var(--root);
+    border-top: 1rem solid var(--root);
+}
+.meta {
+    border-top: 1rem solid var(--meta);
+}
+.section {
+    border-top: 1rem solid var(--section);
 }
