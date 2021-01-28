@@ -21,6 +21,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
+    background-color: var(--background);
 }
 h2 {
     padding: 0rem;
@@ -28,7 +29,6 @@ h2 {
 }
 
 main {
-    background-color: var(--background);
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
