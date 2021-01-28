@@ -4,6 +4,7 @@
 
     --cardText: #eee;
 
+    --groupBorderWidth: 1rem;
     --root: rgb(192, 192, 192);
     --meta: rgb(37, 185, 0);
     --section: rgb(16, 108, 255);
@@ -61,12 +62,44 @@ main {
     margin: 0 2rem;
     font-size: 120%;
 }
+
+/* Group Border Colouring */
 .root {
-    border-top: 1rem solid var(--root);
+    border-top: var(--groupBorderWidth) solid var(--root);
 }
 .meta {
-    border-top: 1rem solid var(--meta);
+    border-top: var(--groupBorderWidth) solid var(--meta);
 }
 .section {
-    border-top: 1rem solid var(--section);
+    border-top: var(--groupBorderWidth) solid var(--section);
+}
+.textBlock {
+    border-top: var(--groupBorderWidth) solid var(--textBlock);
+}
+.textInline {
+    border-top: var(--groupBorderWidth) solid var(--textInline);
+}
+.media {
+    border-top: var(--groupBorderWidth) solid var(--media);
+}
+.embedding {
+    border-top: var(--groupBorderWidth) solid var(--embedding);
+}
+.scripting {
+    border-top: var(--groupBorderWidth) solid var(--scripting);
+}
+.tables {
+    border-top: var(--groupBorderWidth) solid var(--tables);
+}
+.forms {
+    border-top: var(--groupBorderWidth) solid var(--forms);
+}
+.interactive {
+    border-top: var(--groupBorderWidth) solid var(--interactive);
+}
+.components {
+    border-top: var(--groupBorderWidth) solid var(--components);
+}
+.obsolete {
+    border-top: var(--groupBorderWidth) solid var(--obsolete);
 }

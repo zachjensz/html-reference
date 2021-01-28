@@ -168,5 +168,102 @@ export const elements = [
         attributes: [],
         documentLimit: false,
         group: 'section'
+    },
+    {
+        tag: '<blockquote>',
+        content: 'Extended quotation',
+        name: 'blockquote',
+        description: 'Represents an extended quotation.',
+        group: 'textBlock'
+    },
+    {
+        tag: '<dd>',
+        content: 'description, definition or value of preceding term',
+        name: 'Description Details',
+        description:
+            'Represents the value of the preceding Description Term in a Description List',
+        group: 'textBlock'
+    },
+    {
+        tag: '<div>',
+        content: 'flow content',
+        name: 'Content Division',
+        description: 'Generic container for flow content',
+        group: 'textBlock'
+    },
+    {
+        tag: '<dl>',
+        content: ['dt', 'dd'],
+        name: 'Description List',
+        description: 'Represents a description list of terms and descriptions',
+        group: 'textBlock'
+    },
+    {
+        tag: '<dt>',
+        content: 'text',
+        name: 'Description Term',
+        description: 'Specifies a term in a description or definition list',
+        group: 'textBlock'
+    },
+    {
+        tag: '<figcaption>',
+        content: 'text',
+        name: 'Figure Caption',
+        description:
+            'Represents a caption or legend describing the rest of its parent figure element',
+        group: 'textBlock'
+    },
+    {
+        tag: '<figure>',
+        content: 'any',
+        name: 'Figure',
+        description:
+            'Represents self-contained content, may contain an optional figure caption element',
+        group: 'textBlock'
+    },
+    {
+        tag: '<hr>',
+        content: false,
+        name: 'Horizontal Rule',
+        description: 'Thematic break between paragraph level elements',
+        group: 'textBlock'
+    },
+    {
+        tag: '<li>',
+        content: 'any',
+        name: 'List Item',
+        description: 'Item in a list',
+        group: 'textBlock'
+    },
+    {
+        tag: '<ol>',
+        content: ['li'],
+        name: 'Ordered List',
+        description:
+            'Ordered list of items, typically rendered as a numbered list',
+        group: 'textBlock'
+    },
+    {
+        tag: '<p>',
+        content: 'text',
+        name: 'Paragraph',
+        description: 'Paragraph of text',
+        group: 'textBlock'
+    },
+    {
+        tag: '<pre>',
+        content: 'text',
+        name: 'Preformatted',
+        description:
+            'Preformatted text to be presented exactly as written in the HTML',
+        group: 'textBlock'
+    },
+    {
+        tag: '<ul>',
+        content: ['li'],
+        name: 'Unordered List',
+        description:
+            'Unordered list of items, typically rendered as a bulleted list',
+        group: 'textBlock'
     }
 ]
